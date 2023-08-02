@@ -1,10 +1,12 @@
-def FileManage(cmd, contents):
-    """ Performs both read and write in the same method"""
-    match cmd:
-        case "Fetch":
-            with open("Data.txt", "r") as file:
-                return file.readlines()
-        case "Alter":
-            with open("Data.txt", "w") as file:
-                file.writelines(contents)
-            return "List updated successfully"
+FilePath = "Data.txt"
+
+
+def get_todos(filepath=FilePath):
+    with open(filepath, "r") as file_local:
+        todos_local = file_local.readlines()
+    return todos_local
+
+
+def write_todos(todos_arg, filepath=FilePath):
+    with open(filepath, "w") as file:
+        file.writelines(todos_arg)
