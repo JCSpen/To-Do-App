@@ -1,9 +1,3 @@
-Wake up
-Shower
-Get dressed
-Do laundry
-Go to work
-Go shopping
-Go church
-Go drive
-Go sleep
+Do laundry.
+Buy groceries.
+Clean kitchen.
